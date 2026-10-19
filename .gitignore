@@ -1,0 +1,70 @@
+# ─── Database (never commit the real DB — everyone starts fresh) ──────────────
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+fundtracker.db
+
+# ─── PDF Drop Folder & Demo Statements (never commit) ─────────────────────────
+# Each user's local PDFs and synthetic test statements live here locally.
+Fund Tracker PDF Data/
+demo_statements/
+
+# ─── Secret keys & environment variables ─────────────────────────────────────
+# IMPORTANT: Never commit .env — it contains your DashScope or Gemini API keys!
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# ─── Hackathon Portal Prep & Internal Agent Logs ─────────────────────────────
+.agents/
+submission_docs/
+submission_attachments/
+*.zip
+docs/*.pptx
+docs/*.pdf
+docs/AI_PIPELINE_AND_PRIVACY_FLOW.png
+docs/SYSTEM_ARCHITECTURE_DIAGRAM.png
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ─── Node / Frontend ─────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/build/
+.npm/
+
+# ─── Electron build output ────────────────────────────────────────────────────
+out/
+release/
+
+# ─── OS junk ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── IDE files (optional — remove if your team uses the same IDE) ────────────
+.vscode/
+.idea/
+*.swp
+
+# ─── Playwright browser cache ─────────────────────────────────────────────────
+playwright/.cache/
+
+# ─── Alembic auto-generated migration backup ─────────────────────────────────
+# (keep the migrations folder itself, just ignore __pycache__ inside it)
+backend/alembic/versions/__pycache__/
